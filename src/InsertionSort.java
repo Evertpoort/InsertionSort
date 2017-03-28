@@ -321,7 +321,6 @@ public class InsertionSort {
     public static class btnStartAction implements ActionListener{
         public void actionPerformed (ActionEvent e) {
             isRunning = true;
-            checkStatus();
         }
     }
 
@@ -329,14 +328,12 @@ public class InsertionSort {
         public void actionPerformed (ActionEvent e) {
             insertionSort(intArray);
             isRunning = false;
-            checkStatus();
         }
     }
 
     public static class btnPauseAction implements ActionListener{
         public void actionPerformed (ActionEvent e){
             isRunning = false;
-            checkStatus();
         }
     }
 
