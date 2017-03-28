@@ -37,6 +37,7 @@ public class InsertionSort {
         createButtons();
         updateTextFields(Color.ORANGE, Color.BLACK);
 
+        //Constantly check the status (every 1000ms)
         while (true){
             try {
                 Thread.sleep(1000);
@@ -111,7 +112,7 @@ public class InsertionSort {
         textField0.setBounds(185, 10, 20, 20);
         textField0.setHorizontalAlignment(JTextField.CENTER);
 
-        String u1 = Integer.toString(startArray[0]);
+        String u1 = Integer.toString(startArray[1]);
         JTextField textField1 = new JTextField(u1, 1);
         pane.add(textField1);
         textField1.setForeground(Color.RED);
@@ -120,7 +121,7 @@ public class InsertionSort {
         textField1.setBounds(210, 10, 20, 20);
         textField1.setHorizontalAlignment(JTextField.CENTER);
 
-        String u2 = Integer.toString(startArray[0]);
+        String u2 = Integer.toString(startArray[2]);
         JTextField textField2 = new JTextField(u2, 1);
         pane.add(textField2);
         textField2.setForeground(Color.RED);
@@ -129,7 +130,7 @@ public class InsertionSort {
         textField2.setBounds(235, 10, 20, 20);
         textField2.setHorizontalAlignment(JTextField.CENTER);
 
-        String u3 = Integer.toString(startArray[0]);
+        String u3 = Integer.toString(startArray[3]);
         JTextField textField3 = new JTextField(u3, 1);
         pane.add(textField3);
         textField3.setForeground(Color.RED);
@@ -138,7 +139,7 @@ public class InsertionSort {
         textField3.setBounds(260, 10, 20, 20);
         textField3.setHorizontalAlignment(JTextField.CENTER);
 
-        String u4 = Integer.toString(startArray[0]);
+        String u4 = Integer.toString(startArray[4]);
         JTextField textField4 = new JTextField(u4, 1);
         pane.add(textField4);
         textField4.setForeground(Color.RED);
@@ -147,7 +148,7 @@ public class InsertionSort {
         textField4.setBounds(285, 10, 20, 20);
         textField4.setHorizontalAlignment(JTextField.CENTER);
 
-        String u5 = Integer.toString(startArray[0]);
+        String u5 = Integer.toString(startArray[5]);
         JTextField textField5 = new JTextField(u5, 1);
         pane.add(textField5);
         textField5.setForeground(Color.RED);
@@ -156,7 +157,7 @@ public class InsertionSort {
         textField5.setBounds(310, 10, 20, 20);
         textField5.setHorizontalAlignment(JTextField.CENTER);
 
-        String u6 = Integer.toString(startArray[0]);
+        String u6 = Integer.toString(startArray[6]);
         JTextField textField6 = new JTextField(u6, 1);
         pane.add(textField6);
         textField6.setForeground(Color.RED);
@@ -165,7 +166,7 @@ public class InsertionSort {
         textField6.setBounds(335, 10, 20, 20);
         textField6.setHorizontalAlignment(JTextField.CENTER);
 
-        String u7 = Integer.toString(startArray[0]);
+        String u7 = Integer.toString(startArray[7]);
         JTextField textField7 = new JTextField(u7, 1);
         pane.add(textField7);
         textField7.setForeground(Color.RED);
@@ -174,7 +175,7 @@ public class InsertionSort {
         textField7.setBounds(360, 10, 20, 20);
         textField7.setHorizontalAlignment(JTextField.CENTER);
 
-        String u8 = Integer.toString(startArray[0]);
+        String u8 = Integer.toString(startArray[8]);
         JTextField textField8 = new JTextField(u8, 1);
         pane.add(textField8);
         textField8.setForeground(Color.RED);
@@ -183,7 +184,7 @@ public class InsertionSort {
         textField8.setBounds(385, 10, 20, 20);
         textField8.setHorizontalAlignment(JTextField.CENTER);
 
-        String u9 = Integer.toString(startArray[0]);
+        String u9 = Integer.toString(startArray[9]);
         JTextField textField9 = new JTextField(u9, 1);
         pane.add(textField9);
         textField9.setForeground(Color.RED);
@@ -307,12 +308,12 @@ public class InsertionSort {
             intArray[ i+1 ] = key;    // Put the key in its proper location
         }
 
-        if(a <= 9){
+        if(a < 9){
             a++;
             updateTextFields(Color.ORANGE, Color.black);
         }
 
-        if(a > 9){
+        else{
             updateTextFields(Color.GREEN, Color.black);
         }
     }
